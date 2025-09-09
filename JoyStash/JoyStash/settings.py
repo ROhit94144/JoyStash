@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 from environ import Env
 import dj_database_url
+import os
 env=Env()
 Env.read_env()
 ENVIRONMENT=env('ENVIRONMENT', default='production')
